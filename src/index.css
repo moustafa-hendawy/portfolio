@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url(/fonts/Roboto_Serif/RobotoSerif-Italic-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+html {
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+--primary: #000;
+--secondary: rgb(24 24 27);
+--border: rgba(63, 63, 70, 0.4);
+--title: rgb(244 244 254);
+--subtitle: rgb(161 161 170);
+--bgHeader: rgb(39 39 42);
+}
+.light {
+  --primary: #fff
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+.flex {
+  display: flex;
+}
+
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--border);
+  background-color: var(--secondary);
+
+}
+.divider {
+  padding-top: 22px;
+  margin: 3rem 0;
+  border-top: 1px solid var(--border);
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+button:active {
+  scale: 0.95;
+}

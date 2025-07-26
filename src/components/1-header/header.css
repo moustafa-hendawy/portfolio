@@ -1,0 +1,126 @@
+header.flex {
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+
+header ul.flex {
+    gap: 16px;
+    
+}
+
+header nav {
+    background-color: var(--bgHeader);
+    padding: .77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px #2323242a;
+}
+header nav ul.flex li {
+list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+header ul li a:hover {
+    text-decoration: none;
+    color: blue;
+    opacity: 1;
+    font-size: 0.9rem;
+    
+}
+
+header button {
+    font-size: 1.2rem;
+}
+
+header button.menu {
+    display: none;
+}
+
+.fixed   {
+position: fixed;
+inset: 0;
+z-index: 11;
+background-color: rgb(40,40, 48,0.91);
+color: wheat;
+}
+
+@keyframes mymove {
+    0% {scale: 0;}
+    60% {scale: 1.2;}
+    100% {scale: 1;}
+}
+
+
+.fixed ul.model {
+ width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary);
+margin-top: 2rem;
+border-radius: 1rem;
+padding: 1rem 2rem;
+animation: mymove 0.77s 1;
+}
+
+.fixed ul li {
+    list-style: none;
+     /* margin: 30px 5px; */
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+.fixed ul li:last-child {
+    border-bottom: none;
+}  
+
+.fixed ul li a {
+    text-decoration: none;
+   font-size: 1.2rem;
+}
+.fixed ul li:first-child {
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+}
+.icon-cross {
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+.icon-cross:hover {
+    font-size: 1.6rem;
+    rotate: 180deg;
+    color: red;
+}
+.icon-menu, .moon-mode {
+    background-color: var(--bgHeader);
+    color: var(--subtitle);
+    border: 1px solid rgba(250, 128, 114, 0.227);
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    text-align: center;
+   transition: 0.2s;
+    
+}
+ .icon-menu:hover, .moon-mode:hover {
+  color: var(--title);
+    border: 1px solid rgba(250, 128, 114, 0.77);
+ }
+
+
+@media (max-width: 700px) {
+    header nav {
+        display: none;
+    }
+    header button.menu {
+        display: block;
+    }
+
+}
