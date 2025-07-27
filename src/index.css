@@ -6,6 +6,10 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
 :root {
 --primary: #000;
 --secondary: rgb(24 24 27);
@@ -13,6 +17,8 @@ html {
 --title: rgb(244 244 254);
 --subtitle: rgb(161 161 170);
 --bgHeader: rgb(39 39 42);
+--blue: rgb(93, 188, 252);
+--icon-hover: #d4d4d8
 }
 .light {
   --primary: #fff
@@ -33,8 +39,29 @@ body {
   margin-right: auto;
   border: 2px solid var(--border);
   background-color: var(--secondary);
+  padding: 0 4rem;
 
 }
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+}
+
+
 .divider {
   padding-top: 22px;
   margin: 3rem 0;

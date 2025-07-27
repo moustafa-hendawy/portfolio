@@ -1,0 +1,45 @@
+section.hero-section {
+    margin-top: 3rem;
+}
+
+section.hero-section .left-section {
+    flex-grow: 1;
+}
+section.hero-section .left-section h1.title{
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+        margin: 24px 0;
+        color: var(--title);
+}
+section.hero-section .left-section p.sub-title{
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 32px;
+}
+
+section.hero-section .left-section img {
+border: 1px solid orange;
+border-radius: 50%;
+padding: 2px;
+box-shadow: 1px 1px 40px rgba(157, 138, 102, 0.19) inset;    
+margin-right: 16px;
+}
+section.hero-section .left-section span {
+    color: var(--blue);
+    font-size: 1.6rem;
+
+}
+
+
+section.hero-section .icons {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+section.hero-section .icons .icon:hover{
+    font-size: 1.4rem;
+    transition: 0.3s;
+    color: var(--icon-hover);
+    cursor: pointer;
+}

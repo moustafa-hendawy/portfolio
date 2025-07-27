@@ -6,6 +6,7 @@ function Header() {
   return (
     <header className='flex'>
         <button className='menu icon-menu' onClick={() => setShowMenu(true)}></button>
+        <div />
       <nav>
        <ul className='flex'>
         <li>
@@ -41,6 +42,7 @@ function Header() {
         </ul>
       </div>
     )}
+    
     </header>
   )
 }
