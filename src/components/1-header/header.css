@@ -27,7 +27,7 @@ header ul li a {
 }
 header ul li a:hover {
     text-decoration: none;
-    color: blue;
+    color: var(--blue);
     opacity: 1;
     font-size: 0.9rem;
     
