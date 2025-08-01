@@ -85,6 +85,6 @@ button:active {
   scale: 0.95;
 }
 
-a {
+a,li {
   all: unset;
 }
