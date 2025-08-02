@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div className="container">
+    <div id='up' className="container">
       <Header />
      
       <Hero />
@@ -23,6 +23,9 @@ function App() {
             <div className="divider" />
 
       <Footer />
+     <a href="#up">
+       <button className='icon-circle-up'></button>
+     </a>
     </div>
   )
 }
