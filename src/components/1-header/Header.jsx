@@ -36,7 +36,7 @@ function Header() {
 
     {showMenu && (
           <div className='fixed'>
-        <ul className='model'>
+        <ul className='model flex'>
             <li><button className='icon-cross' onClick={() => setShowMenu(false)}></button></li>
             <li><a href="">About</a></li>
             <li><a href="">Articles</a></li>

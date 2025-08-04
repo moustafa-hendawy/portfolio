@@ -49,13 +49,14 @@ section.flex .left-section button.active {
 }
 
 section.flex .right-section {
-/* flex-grow: 1; */
+flex-grow: 1;
 flex-wrap: wrap;
 gap: 16px;
 justify-content: center;
 }
 section.flex .right-section .box .title{
 color: var(--title);
+text-transform: capitalize;
 }
 section.flex .right-section .box .sub-title {
     color: var(--subtitle);
