@@ -57,6 +57,7 @@ color: wheat;
 
 
 .fixed ul.model {
+    flex-direction: column;
  width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +113,9 @@ animation: mymove 0.77s 1;
   color: var(--title);
     border: 1px solid rgba(250, 128, 114, 0.77);
  }
-
+.icon-sun {
+    color: rgb(253, 165, 0);
+}
 
 @media (max-width: 700px) {
     header nav {

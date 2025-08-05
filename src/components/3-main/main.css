@@ -30,6 +30,8 @@ section.flex .left-section button.active {
     padding: 0.8rem 0;
     border: 1px solid var(--blue);
 }
+.light section.flex .left-section button:active {
+border: 1px solid #000;}
 .box {
     padding: 1rem 0.4rem;
 }
@@ -46,6 +48,9 @@ section.flex .left-section button.active {
     rotate: 1deg;
     scale: 1.1rem;
     cursor: pointer ;
+}
+.light .card,.light .card:hover {
+border: none;
 }
 
 section.flex .right-section {
