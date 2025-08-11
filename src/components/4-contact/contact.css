@@ -50,13 +50,25 @@ label {
     /* width: 30%; */
     align-self: flex-end;
 }
-
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
 @media (max-width: 600px) {
     form {
         display: flex;
         flex-direction: column;
         width: 85%;
     }
+
+@media (max-width: 1200px) {
+ .animation .contact-animation{
+        display: none;
+        /* visibility: hidden; */
+    }
+}
+
+
     /* كل 
     label
      وما تحتها من 

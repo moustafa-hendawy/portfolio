@@ -43,3 +43,8 @@ section.hero-section .icons .icon:hover{
     color: var(--icon-hover);
     cursor: pointer;
 }
+@media (max-width: 1250px) {
+    .animation {
+        display: none;
+    }
+}

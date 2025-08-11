@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './hero.css'
+import Lottie from "lottie-react"
+import devAnimation from '../../../public/animations/dev.json'
 function Hero() {
+  const ref = useRef(null);
   return (
    <section className='hero-section flex'>
       <div className="left-section">
@@ -21,7 +24,13 @@ function Hero() {
           </div>
       </div>
       <div className="right-section">
-        Animation
+          <Lottie 
+          // https://lottiereact.com
+            lottieRef={ref}
+            onLoadedImages={() => {
+              ref.current.setSpeed(0.5)
+            }}
+            className='animation' animationData={devAnimation} style={{width: '100%', translate: '100px 55px'}} />
       </div>
    </section>
   )
