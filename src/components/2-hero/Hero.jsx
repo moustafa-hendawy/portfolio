@@ -2,17 +2,31 @@ import React, { useRef } from 'react'
 import './hero.css'
 import Lottie from "lottie-react"
 import devAnimation from '../../../public/animations/dev.json'
+import { motion } from "motion/react"                          
 function Hero() {
   const ref = useRef(null);
   return (
    <section className='hero-section flex'>
       <div className="left-section">
           <div className="parent-avatar">
-                <img src="/me.png" className='avatar' alt="" />
+                <motion.img
+                 src="/me.png" className='avatar' alt=""
+                   initial={{transform: "scale(0)"}}
+                animate={{transform: "scale(1.1)"}}
+                transition={{damping: 6, type: 'spring', stiffness: 100}}
+                 
+                 
+                 />
+              
                 <span className='icon-verified'> </span>
           </div>
-          <h1 className='title' style={{display: 'flex', flexWrap: 'wrap'}}>Software designer, founder,
-             and amateur astronaut.</h1>
+          <motion.h1 className='title' style={{display: 'flex', flexWrap: 'wrap'}}
+            initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{duration: 1}}
+          
+          >Software designer, founder,
+             and amateur astronaut.</motion.h1>
           <p className='sub-title'>I’m Spencer, a software designer
              and entrepreneur based in New York City. I’m the founder and CEO of Planetaria,
               where we develop technologies that empower regular people to explore space on their own terms.</p>

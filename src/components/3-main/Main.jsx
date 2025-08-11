@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './main.css'
 import {myProjects} from './myProjects'
+import { motion, AnimatePresence } from "motion/react"
+
 function Main() {
   // const myProjects = [
   //   {'projectTitle': 'react project', 'category': 'react', 'imgPath': '/imgs/1.jpg'},
@@ -95,13 +97,20 @@ const handleClick = (buttonCategory) => {
       </div>
 
       <div className="right-section flex">
-          {arr.map((item) => (
 
-     <article className='card' style={{width: '266px'}}>
-              {/* <img width={264 } src="/imgs/1.jpg" alt="" /> */}
+<AnimatePresence>
+
+
+          {arr.map((item) => (
+     <motion.article className='card' style={{width: '266px'}}
+       layout
+      initial={{transform: 'scale(0)'}}
+      animate={{transform: 'scale(1)'}}
+      transition={{type: 'spring', damping: 8}}
+     
+     >
               <img width={264 } src={item.imgPath} alt="" />
               <div className="box">
-                {/* <h1 className="title">Landing Page 2</h1> */}
                 <h1 className="title">{item.projectTitle}</h1>
                 <p className="sub-title">Lorem ipsum dolor sit amet consectetur 
                   adipisicing elit. Reprehenderit, unde odit autem laborum recusandae quo eius ex fugiat sint,
@@ -118,10 +127,10 @@ const handleClick = (buttonCategory) => {
                 </div>
               </div>
           
-          </article>
+          </motion.article>
           )) }
 
-     
+     </AnimatePresence>
       </div>
     </section>
   )
